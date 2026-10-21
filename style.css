@@ -1,29 +1,20 @@
-/* Pengaturan Dasar & Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+// Mengambil elemen input pencarian dan semua kartu penyakit
+const searchInput = document.getElementById('searchInput');
+const diseaseCards = document.querySelectorAll('.disease-card');
 
-body {
-    background-color: #f4f7f6;
-    color: #333;
-    line-height: 1.6;
-}
+// Menambahkan event listener saat pengguna mengetik di kolom pencarian
+searchInput.addEventListener('keyup', function (event) {
+    const keyword = event.target.value.toLowerCase();
 
-/* Bagian Header / Banner Atas */
-.hero-section {
-    background: linear-gradient(135deg, #2e7d32, #4caf50);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
+    // Memeriksa setiap kartu penyakit
+    diseaseCards.forEach(card => {
+        const diseaseName = card.getAttribute('data-name');
 
-.hero-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero-section p {
-    font-size:
+        // Jika nama penyakit cocok dengan yang diketik, tampilkan; jika tidak, sembunyikan
+        if (diseaseName.includes(keyword)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
