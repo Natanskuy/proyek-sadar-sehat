@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadar Sehat - Kenali Gejala & Pencegahan Penyakit</title>
+    <!-- Menghubungkan file CSS untuk styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Bagian Atas Website -->
+    <header class="hero-section">
+        <h1>Sadar Sehat</h1>
+        <p>Kenali gejalanya sejak dini agar hidup lebih sehat dan waspada.</p>
+        
+        <!-- Kolom Pencarian Interaktif -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Cari penyakit (contoh: Hipertensi, Diabetes)...">
+        </div>
+    </header>
+
+    <!-- Konten Utama: Daftar Penyakit -->
+    <main class="container">
+        <h2 class="section-title">Daftar Penyakit Umum</h2>
+
+        <!-- Wadah untuk kartu-kartu penyakit -->
+        <div class="disease-grid" id="diseaseGrid">
+
+            <!-- Kartu 1: Hipertensi -->
+            <article class="disease-card" data-name="hipertensi tekanan darah tinggi">
+                <h3>Hipertensi (Tekanan Darah Tinggi)</h3>
+                <p class="definition"><strong>Apa itu:</strong> Kondisi ketika tekanan darah pada dinding arteri terlalu tinggi secara konsisten (silent killer).</p>
+                <div class="symptoms">
+                    <h4>Gejala Waspada:</h4>
+                    <ul>
+                        <li>Sakit kepala bagian belakang</li>
+                        <li>Pusing atau rasa berputar</li>
+                        <li>Jantung berdebar-debar</li>
+                    </ul>
+                </div>
+                <div class="prevention">
+                    <h4>Cara Mengatasi & Mencegah:</h4>
+                    <p>Kurangi konsumsi garam, rutin berolahraga minimal 30 menit, dan kelola stres dengan baik.</p>
+                </div>
+            </article>
+
+            <!-- Kartu 2: Diabetes -->
+            <article class="disease-card" data-name="diabetes melitus gula darah">
+                <h3>Diabetes Melitus Tipe 2</h3>
+                <p class="definition"><strong>Apa itu:</strong> Penyakit kronis di mana tubuh tidak bisa memproduksi atau menggunakan insulin dengan efektif.</p>
+                <div class="symptoms">
+                    <h4>Gejala Waspada:</h4>
+                    <ul>
+                        <li>Sering merasa haus & sering buang air kecil</li>
+                        <li>Cepat merasa lapar</li>
+                        <li>Luka lambat sembuh atau kesemutan</li>
+                    </ul>
+                </div>
+                <div class="prevention">
+                    <h4>Cara Mengatasi & Mencegah:</h4>
+                    <p>Batasi makanan/minuman manis, perbanyak serat dari sayur & buah, serta jaga berat badan ideal.</p>
+                </div>
+            </article>
+
+            <!-- Kartu 3: Asam Lambung -->
+            <article class="disease-card" data-name="asam lambung maag dispepsia">
+                <h3>Asam Lambung / Maag</h3>
+                <p class="definition"><strong>Apa itu:</strong> Rasa tidak nyaman di perut bagian atas akibat naiknya asam lambung ke kerongkongan.</p>
+                <div class="symptoms">
+                    <h4>Gejala Waspada:</h4>
+                    <ul>
+                        <li>Nyeri ulu hati / sensasi terbakar di dada</li>
+                        <li>Sering bersendawa & perut kembung</li>
+                        <li>Mual saat perut kosong</li>
+                    </ul>
+                </div>
+                <div class="prevention">
+                    <h4>Cara Mengatasi & Mencegah:</h4>
+                    <p>Makan tepat waktu, hindari makanan pedas/asam/berlemak, serta kurangi kopi.</p>
+                </div>
+            </article>
+
+            <!-- Kartu 4: ISPA / Flu -->
+            <article class="disease-card" data-name="ispa flu batuk pilek">
+                <h3>ISPA / Flu Biasa</h3>
+                <p class="definition"><strong>Apa itu:</strong> Infeksi yang menyerang saluran pernapasan bagian atas akibat virus atau bakteri.</p>
+                <div class="symptoms">
+                    <h4>Gejala Waspada:</h4>
+                    <ul>
+                        <li>Hidung tersumbat atau berair (pilek)</li>
+                        <li>Tenggorokan gatal / nyeri saat menelan</li>
+                        <li>Batuk dan demam ringan</li>
+                    </ul>
+                </div>
+                <div class="prevention">
+                    <h4>Cara Mengatasi & Mencegah:</h4>
+                    <p>Rajin cuci tangan, istirahat cukup, perbanyak minum air hangat, dan gunakan masker.</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer / Bagian Bawah Website -->
+    <footer class="footer">
+        <p>&copy; 2026 Sadar Sehat. Edukasi Kesehatan Mandiri.</p>
+        <p class="disclaimer">Catatan: Informasi ini bersifat edukasi. Jika mengalami gejala berat, segera konsultasikan ke dokter.</p>
+    </footer>
+
+    <!-- Menghubungkan file JavaScript untuk fitur pencarian -->
+    <script src="script.js"></script>
+</body>
+</html>
